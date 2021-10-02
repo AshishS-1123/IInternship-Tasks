@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>2 Player Game</title>
+  </head>
+  <style>
+    #gameBoard {
+      font-size: 28px;
+      width: auto;
+      position: fixed;
+      top: 30%; left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    #gameBoard > button {
+      font-size: 28px;
+    }
+  </style>
+  <body>
+    <div id="gameBoard">
+      <button onClick="{playGame()}">Start Game</button><br />
+      Player 1 - Won: <span id="player1Score">0</span><br />
+      Player 2 - Won: <span id="player2Score">0</span><br />
+      <span id="gameResult"></span>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
